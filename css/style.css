@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../images/background.png");
+    background: linear-gradient(180deg, #1CB5E0 0%, #000851 100%);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+.cabecalho { /* sempre que tiver um ponto e o nome da classe vc vai estar estilizando essa class */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.cabecalho .pokebola {
+    width: 25px;
+    height: 25px;
+}
+
+.cabecalho .titulo {    
+    color: #000851;
+    font-family: 'Secular One', sans-serif;
+    font-size: 46px;
+    -webkit-text-stroke: 0.01px whitesmoke;
+
+}
+
+.planet-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.lista-planet {
+    width: 410px;
+    height: 620px;
+    position: relative;
+}
+
+.lista-planet .informacoes p {
+    text-align: center;
+    justify-content: center;
+}
+
+.lista-planet .informacoes p img  {
+    margin-right: 6px;
+}
+
+.btn-seta {
+    background-color: #f1ecff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-seta img {
+    width: 40px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #262626;
+}
+
+.cartao {
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fundo-1, .fundo-2, .fundo-3, .fundo-4, .fundo-5, .fundo-6, .fundo-7, .fundo-8 {
+    background-color: whitesmoke;
+    background-size: cover;
+}
+
+.cartao .informacoes {
+    background-color: rgba(179, 177, 185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+}
+
+.cartao .informacoes .nome {
+    color: #f1ecff;
+    font-size: 22px;
+}
+
+.cartao .informacoes .vida {
+    background-color: #333;
+    color: #f1ecff;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.cartao .container-imagem {
+    text-align: center;
+}
+
+.cartao .imagem-planeta {
+    max-width: 100%;
+    max-height: 280px;
+    padding: 15px;
+}
+
+.cartao .descricao {
+    background: rgba(255,255,255,0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cartao .descricao .titulo {
+    background-color: #333;
+    color: #f1ecff;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.cartao .descricao .texto {
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+}
+
+.descricao .paragrafo {
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 6px;
+}
+
+.container-imagem img {
+    width: 200px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -10px;
+    color: whitesmoke;
+}
+
+.attribution a {
+    color: rgba(245, 245, 245, 0.574);
+}
